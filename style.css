@@ -19,6 +19,7 @@ margin: 0 auto;
         
     }
     p{
+        position: relative;
 margin: 0px 20px 0 20px;
     }
     .p-big{
@@ -28,9 +29,23 @@ margin: 0px 20px 0 20px;
         color: rgb(66, 66, 113);
     }
     .p-min{
+        
         font-weight: 300;
     }
+
+    @keyframes cardTop{
+from{
+    transform: translateY(-200px);
+}
+to{
+    transform: translateY(0);
+}
+
+    }
     .card{
+        display: flexbox;
+        animation: cardTop 1s ease normal;
+        position: relative;
         text-align: center;
         position: relative;
         top: 50px;
@@ -40,7 +55,8 @@ margin: 0px 20px 0 20px;
         border-radius: 25px;
         width: 300px;
         height: 450px;
-        box-shadow: 20px 20px rgb(0, 0, 0);
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.515) ;
+        
     }
     footer{
         text-align: center;
